@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sports Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SportsHub</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to SportsHub</h2>
+            <p>Your place for sports news, scores and updates.</p>
+
+            <button onclick="showMessage()">Explore Sports</button>
+        </div>
+    </section>
+
+
+    <!-- Sports Section -->
+    <section id="sports" class="section">
+        <h2>Popular Sports</h2>
+
+        <div class="sports-container">
+
+            <div class="sport-card">
+                <div class="sport-icon">⚽</div>
+                <h3>Football</h3>
+                <p>Latest football matches and news.</p>
+            </div>
+
+            <div class="sport-card">
+                <div class="sport-icon">🏏</div>
+                <h3>Cricket</h3>
+                <p>Scores, matches and cricket updates.</p>
+            </div>
+
+            <div class="sport-card">
+                <div class="sport-icon">🏀</div>
+                <h3>Basketball</h3>
+                <p>Basketball games and team updates.</p>
+            </div>
+
+            <div class="sport-card">
+                <div class="sport-icon">🎾</div>
+                <h3>Tennis</h3>
+                <p>Follow tournaments and players.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Scores Section -->
+    <section id="scores" class="section scores-section">
+
+        <h2>Today's Scores</h2>
+
+        <div class="score-card">
+            <div>
+                <h3>Manchester United</h3>
+                <p>Football</p>
+            </div>
+
+            <strong>2 - 1</strong>
+
+            <div>
+                <h3>Liverpool</h3>
+                <p>Full Time</p>
+            </div>
+        </div>
+
+
+        <div class="score-card">
+            <div>
+                <h3>India</h3>
+                <p>Cricket</p>
+            </div>
+
+            <strong>245/6</strong>
+
+            <div>
+                <h3>Australia</h3>
+                <p>25 Overs</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- News Section -->
+    <section id="news" class="section">
+
+        <h2>Latest Sports News</h2>
+
+        <div class="news-container">
+
+            <article class="news-card">
+                <h3>Football Championship</h3>
+                <p>
+                    The latest football championship matches are
+                    bringing exciting results.
+                </p>
+                <button onclick="readNews('Football Championship')">
+                    Read More
+                </button>
+            </article>
+
+            <article class="news-card">
+                <h3>Cricket World Cup</h3>
+                <p>
+                    Teams are preparing for the upcoming cricket
+                    tournament.
+                </p>
+                <button onclick="readNews('Cricket World Cup')">
+                    Read More
+                </button>
+            </article>
+
+            <article class="news-card">
+                <h3>Tennis Tournament</h3>
+                <p>
+                    Top players are competing in the latest tennis
+                    tournament.
+                </p>
+                <button onclick="readNews('Tennis Tournament')">
+                    Read More
+                </button>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SportsHub. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
